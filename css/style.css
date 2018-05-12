@@ -1,8 +1,18 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
 *{
   box-sizing: border-box;
 }
 
 html {
+  overflow: hidden;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -74,7 +84,7 @@ p {
   margin: 0 auto;
   max-width: 400px;
   width: 100%;
-  padding: 25px;
+  padding: 25px 10px;
 }
 
 .logo__title {
@@ -102,24 +112,25 @@ p {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 0 0 7px 7px;
+  padding: 2px 8px;
 }
 
 .menu__list {
   padding: 0;
   list-style: none;
   display: table;
-  margin-left: auto;
-  margin-right: auto;
+/*  margin-left: auto;
+  margin-right: auto;*/
 }
 
 .menu__item {
   float: left;
-  margin-left: 5px;
+  /*margin-left: 5px;*/
 }
 
 .menu__item:last_child {
   float: left;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .menu__item.active a {
@@ -127,6 +138,7 @@ p {
 }
 
 .menu__item a {
+  margin-right: 4px;
   padding: 10px 15px;
   border-radius: 4px;
 }
