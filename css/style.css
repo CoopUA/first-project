@@ -307,7 +307,17 @@ p {
 
 .footer-widget-1,
 .footer-widget-2,
-.footer-widget-3, 
+.footer-widget-3 {
+  width: calc(25% - 20px);
+  margin-right: 10px;
+}
+
+.footer-widget-2,
+.footer-widget-3,
+.footer-widget-4 {
+  margin-left: 15px;
+}
+
 .footer-widget-4 {
   width: calc(25% - 20px);
 }
