@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,15 @@
       <span class="logo__description">Тестовый сайт для первого модуля, курса HTML/CSS</span>
     </div>
   <nav class="menu">
-      <ul class="menu__list">
+    <div class="menu__hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul class="menu__list" id="menu-list">
         <li class="menu__item active"><a href="#">Главная</a></li>
         <li class="menu__item"><a href="#">Страница</a></li>
         <li class="menu__item"><a href="#">Запись</a></li>
@@ -102,5 +111,11 @@
       <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Маленькая которое залетают силуэт буквоград?</p>
     </div>
   </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
