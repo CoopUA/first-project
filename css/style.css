@@ -275,10 +275,10 @@ p {
 
 .widget h4 {
   color: #ffffff;
-  padding: 15px 0;
+  padding: 20px 0 15px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   line-height: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   letter-spacing: 1px;
   margin-top: 0;
 }
@@ -293,7 +293,7 @@ p {
 
 .widget-search input {
   background-color: rgba(0, 0, 0, 0.2);
-  height: 35px;
+  height: 30px;
   width: 80%;
   margin: -5px 25px 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -309,7 +309,7 @@ p {
 .widget-search i {
   position: absolute;
   padding-top: 8px;
-  padding-left: 8px;
+  padding-left: 9px;
   height: 35px;
   width: 30px;
   opacity: 0.5;
@@ -323,7 +323,7 @@ p {
 }
 
 .widget-categories__list li {
-  padding-left: 25px;
+  padding-left: 0px;
 }
 
 .widget-categories__list li:last-child {
@@ -332,7 +332,7 @@ p {
 
 .widget-categories__list a {
   display: block;
-  padding: 10px 0;
+  padding: 5px 0 12px;
   border-radius: 7px;
   transition: padding-left 0.5s, background-color 0.5s;
 }
