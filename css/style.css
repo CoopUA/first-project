@@ -284,7 +284,7 @@ p {
   width: 30%;
   flex-grow: 1;
   position: relative;
-
+  overflow: hidden;
 }
 
 .content-image {
@@ -316,7 +316,7 @@ p {
 .content-description {
   position: absolute;
   top: 110%;
-  display: none;
+  display: block;
   padding: 10px;
   height: calc(100% - 66px);
   background-color: rgba(0, 0, 0, 0.5);
@@ -325,11 +325,11 @@ p {
   width: calc(100% - 20px);
   border-radius: 0 0 7px 7px;
   margin-top: 17px;
+  transition: top 0.5s;
 }
 
 .content-url:hover .content-description{
   top: 35px;
-  display: block;
 }
 
 .widget {
