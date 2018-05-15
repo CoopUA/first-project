@@ -130,7 +130,7 @@ p {
   float: left;
 }
 
-.menu__item:last_child {
+.menu__item:last-child {
   float: left;
   margin-left: 5px;
 }
