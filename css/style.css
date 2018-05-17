@@ -34,6 +34,10 @@ a:hover {
   color: #ff0000;
 }
 
+a:active {
+  padding: 0;
+}
+
 p {
   line-height: 2rem;
 }
@@ -53,7 +57,7 @@ p {
 .main {
   flex-grow: 1;
   min-height: calc(100vh - 199px);
-  padding-left: 20px;
+  padding-left: 25px;
   padding-right: 20px;
   width: calc(100% - 450px);
 }
@@ -280,11 +284,12 @@ p {
 }
 
 .content-item {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   width: 30%;
   flex-grow: 1;
   position: relative;
   overflow: hidden;
+  bottom: 20px;
 }
 
 .content-image {
@@ -318,7 +323,7 @@ p {
   top: 110%;
   display: block;
   padding: 10px;
-  height: calc(100% - 66px);
+  height: calc(100% - 56px);
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   text-align: center;
