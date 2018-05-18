@@ -364,10 +364,10 @@ p {
   width: 80%;
   margin: -5px 25px 13px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 5px;
+  border-radius: 0 4px 4px 0;
 }
 
-.widget-search input:focus {
+.widget-search input:focus + i{
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.25);
   opacity: 1;
@@ -376,12 +376,15 @@ p {
 .widget-search i {
   position: absolute;
   padding-top: 8px;
-  padding-left: 9px;
-  height: 35px;
+  padding-left: 8px;
+  height: 30px;
   width: 30px;
   opacity: 0.5;
   top: -5px;
-  left: 0;
+  left: -4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px 0 0 4px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .widget-categories__list {
