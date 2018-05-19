@@ -53,8 +53,8 @@ p {
 .main {
   flex-grow: 1;
   min-height: calc(100vh - 199px);
-  width: calc(100% - 500px);
-  margin: 0 15px 15px;
+  width: calc(100% - 490px);
+  margin: 0 20px 15px 25px;
 }
 
 .main-content h1 {
@@ -67,7 +67,7 @@ p {
 
 .left {
   min-height: 100px;
-  width: 242px;
+  width: 245px;
   order: -1;
 }
 
