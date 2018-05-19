@@ -366,6 +366,7 @@ p {
   border-radius: 4px;
   color: #eeeeee;
   padding-left: 40px;
+  text-overflow: ellipsis;
 }
 .widget-search input::placeholder {
   color: #aaaaaa;
