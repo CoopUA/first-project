@@ -369,7 +369,6 @@ p {
 }
 .widget-search input::placeholder {
   color: #aaaaaa;
-  padding-left: 10px;
 }
 
 .widget-search input:focus{
@@ -392,7 +391,6 @@ p {
   top: 0px;
   left: 0px;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 4px 0 0 4px;
   background-color: rgba(255, 255, 255, 0.05);
   color: #ffffff;
 }
