@@ -53,9 +53,8 @@ p {
 .main {
   flex-grow: 1;
   min-height: calc(100vh - 199px);
-  padding-left: 25px;
-  padding-right: 20px;
-  width: calc(100% - 450px);
+  width: calc(100% - 500px);
+  margin: 0 15px 15px;
 }
 
 .main-content h1 {
@@ -132,7 +131,7 @@ p {
 
 .menu__item:last-child {
   float: left;
-  margin-left: 5px;
+  margin-left: 0;
 }
 
 .menu__item.active a {
@@ -235,7 +234,7 @@ p {
   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
   text-align: right;
   border-radius: 7px;
-  padding: 8px 20px;
+  padding: 8px 0;
 }
 
 .breadcrumb span {
@@ -359,18 +358,28 @@ p {
 }
 
 .widget-search input {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   height: 30px;
-  width: 80%;
-  margin: -5px 25px 13px;
+  width: 100%;
+  margin: 0 0 13px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
+  color: #eeeeee;
+  padding-left: 40px;
+}
+.widget-search input::placeholder {
+  color: #aaaaaa;
+  padding-left: 10px;
 }
 
-.widget-search input:focus + i{
+.widget-search input:focus{
   background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  opacity: 1;
+  color: #ffffff;
+}
+
+.widget-search input:focus + i {
+  opacity: 1
 }
 
 .widget-search i {
@@ -380,11 +389,12 @@ p {
   height: 30px;
   width: 30px;
   opacity: 0.5;
-  top: -5px;
-  left: -4px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  top: 0px;
+  left: 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 4px 0 0 4px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
 }
 
 .widget-categories__list {
@@ -408,7 +418,7 @@ p {
   transition: padding-left 0.5s, background-color 0.5s;
 }
 
-.widget-categories__list a:hover, a:focus {
+.widget-categories__list a:hover, .widget-categories__list a:focus {
   padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.5);
   text-shadow: 0 0 10px #000000;  
@@ -481,26 +491,24 @@ p {
 .footer-widget-1,
 .footer-widget-2,
 .footer-widget-3 {
-  width: calc(25% - 20px);
-  margin-right: 10px;
+  width: calc(25% - 10px);
 }
 
 .footer-widget-2,
 .footer-widget-3,
 .footer-widget-4 {
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 .footer-widget-4 {
-  width: calc(25% - 20px);
+  width: calc(25% - 10px);
 }
 
 .footer-widget-1 h4,
 .footer-widget-2 h4,
 .footer-widget-3 h4,
 .footer-widget-4 h4 {
-  font-size: 1.0rem;
-  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 .footer-widget-1 p,
@@ -512,7 +520,7 @@ p {
 }
 
 .footer-bot h4 {
-font-size: 1.0rem;
+font-size: 1.1rem;
 letter-spacing: 1px;
 }
 
@@ -535,23 +543,23 @@ letter-spacing: 1px;
   .main .main-breadcrumb {
     margin-right: 0;
   }
-  .main .main-content {
-    margin-right: -10px;
-  }
 }
 
 @media (max-width: 992px) {
   .footer-widget-1,
   .footer-widget-3 {
-    width: calc(45% - 10px);
-    margin-left: 30px;
+    width: calc(50% - 10px);
+    margin-left: 0;
+    margin-right: 20px;
   }
 
   .footer-widget-2,  
   .footer-widget-4 {
-    width: calc(45% - 10px);
+    width: calc(50% - 10px);
+    margin-left: 0;
     margin-right: 0;
   }
+
   .content-description {
     overflow: hidden;
   }
@@ -560,6 +568,7 @@ letter-spacing: 1px;
 @media (max-width: 768px) {
   .main {
     width: 100%;
+    margin-left: 0;
   }
   .left {
     width: 50%;
