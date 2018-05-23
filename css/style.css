@@ -536,8 +536,8 @@ letter-spacing: 1px;
   }
   .main {
     overflow: hidden;
-    margin: 0 0 15px 15px;
-    width: calc(100% - 265px);
+    margin: 0 0 15px 25px;
+    width: calc(100% - 300px);
   }
   .main .main-breadcrumb {
     margin-right: 0;
@@ -568,15 +568,15 @@ letter-spacing: 1px;
   .main {
     width: 100%;
     margin-left: 0;
+    margin-bottom: 5px;
   }
   .left {
-    width: 50%;
+    width: calc(50% - 10px);
     order: 0;
-    padding-right: 10px;
   }
   .right {
-    width: 50%;
-    padding-left: 10px;
+    width: calc(50% - 10px);
+    margin-left: 20px;
   }
   .menu__hamburger {
     display: block;
