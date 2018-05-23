@@ -285,11 +285,13 @@ p {
   position: relative;
   overflow: hidden;
   bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .content-image {
   width: 100%;
   border-radius: 7px;
+  display: block;
 }
 
 .content-title {
@@ -318,7 +320,7 @@ p {
   top: 110%;
   display: block;
   padding: 10px;
-  height: calc(100% - 56px);
+  height: calc(100% - 52px);
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   text-align: center;
