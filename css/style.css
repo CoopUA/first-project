@@ -264,70 +264,60 @@ p {
   font-size: 14px;
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding-top: 20px;
-}
-
 .content-item__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .content-item {
-  padding: 10px 10px 0 10px;
-  width: 30%;
   flex-grow: 1;
-  position: relative;
-  overflow: hidden;
-  bottom: 20px;
-  margin-bottom: 10px;
+  width: 33.3333%;
 }
 
 .content-image {
   width: 100%;
-  border-radius: 7px;
   display: block;
 }
 
+.content-item-wrap {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 7px;
+}
+
 .content-title {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
   overflow: hidden;
-  height: 42px;
-  padding-top: 10px;
+  height: 45px;
+  padding-top: 15px;
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0;
   color: #ffffff;
   font-size: 1rem; 
   position: absolute; 
-  right: 10px;
-  top: 10px;
-  left: 10px;
-  bottom: 10px;
-  border-radius: 7px 7px 0 0;
+  right: 0;
+  top: 0;
+  left: 0;
 }
 
 .content-description {
   position: absolute;
-  top: 110%;
+  top: 100%;
   display: block;
-  padding: 10px;
-  height: calc(100% - 52px);
+  padding: 17px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   text-align: center;
-  width: calc(100% - 20px);
-  border-radius: 0 0 7px 7px;
-  margin-top: 17px;
+  width: 100%;
+  margin-top: 10px;
   transition: top 0.5s;
+  transition-delay: 0.3s;
 }
 
 .content-url:hover .content-description{
@@ -532,7 +522,21 @@ letter-spacing: 1px;
   padding-bottom: 20px;
 }
 
+
+
+@media (max-width: 1330px) {
+  body {
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 @media (max-width: 1024px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .right {
     width: 100%;
   }
@@ -542,6 +546,14 @@ letter-spacing: 1px;
     width: calc(100% - 300px);
   }
   .main .main-breadcrumb {
+    margin-right: 0;
+  }
+  .breadcrumb {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main-content {
+    margin-left: 0;
     margin-right: 0;
   }
 }
@@ -567,6 +579,10 @@ letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .main {
     width: 100%;
     margin-left: 0;
@@ -606,7 +622,7 @@ letter-spacing: 1px;
   }
   .right {
     width: 100%;
-    padding-left: 0;
+    margin-left: 0;
   }
 }
 
