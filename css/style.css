@@ -607,7 +607,8 @@ letter-spacing: 1px;
   .menu__list {
     display: none;
   }
-  .menu__item {
+  .menu__item,
+  .menu__item:last-child {
     float: none;
     margin-left: 10px;
     margin-right: 10px;
