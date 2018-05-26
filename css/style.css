@@ -264,6 +264,11 @@ p {
   font-size: 14px;
 }
 
+.content {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 .content-item__wrapper {
   display: flex;
   flex-wrap: wrap;
