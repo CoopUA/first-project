@@ -427,6 +427,7 @@ p {
   line-height: 1.8rem;
 }
 
+
 .widget-new__item-img {
   width: 80px;
   height: 80px;
@@ -526,8 +527,6 @@ letter-spacing: 1px;
   margin-top: -10px;
   padding-bottom: 20px;
 }
-
-
 
 @media (max-width: 1330px) {
   body {
